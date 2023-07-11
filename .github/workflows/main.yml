@@ -33,4 +33,4 @@ jobs:
         env:
           BUILD_DIR: docs
           PAGES_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.$ }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
