@@ -1,3 +1,18 @@
-- name: Zola Deploy to Pages
-  uses: shalzz/zola-deploy-action@v0.12.0
+name: Zola on GitHub Pages
 
+on: 
+ push:
+  branches:
+   - main2
+
+jobs:
+  build:
+    name: Publish site
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout master
+      uses: actions/checkout@v3.0.0
+    - name: Build and deploy
+      uses: shalzz/zola-deploy-action@v0.17.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
