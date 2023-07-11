@@ -19,6 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          # BUILD_DIR: docs
          # BUILD_ONLY: true
-          BUILD_FLAGS: --drafts
+         # BUILD_FLAGS: --drafts
           # A GitHub token is not necessary when BUILD_ONLY is true
           
