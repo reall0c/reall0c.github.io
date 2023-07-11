@@ -33,4 +33,4 @@ jobs:
         env:
           BUILD_DIR: docs
           PAGES_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.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 }}
+          GITHUB_TOKEN: ${{ secrets.$ }}
