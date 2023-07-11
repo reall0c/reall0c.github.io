@@ -6,13 +6,9 @@ on:
    - main2
 
 jobs:
-  build:
-    name: Publish site
-    runs-on: ubuntu-latest
+  foo:
     steps:
-    - name: Checkout master
-      uses: actions/checkout@v3.0.0
-    - name: Build and deploy
-      uses: shalzz/zola-deploy-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.17.1
+      
