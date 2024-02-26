@@ -3,7 +3,7 @@ name: Zola on GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - master 
   pull_request:
   
 jobs:
@@ -33,4 +33,4 @@ jobs:
         env:
           BUILD_DIR: docs
           PAGES_BRANCH: gh-pages
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.TESTDEV }}
