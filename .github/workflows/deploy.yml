@@ -1,0 +1,44 @@
+name: Deploy Zola Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on pushes to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch submodules (Linkita theme)
+
+      # Step 2: Set up Rust environment
+      - name: Set up Rust
+        uses: actions/setup-rust@v1
+        with:
+          rust-version: stable
+
+      # Step 3: Install Zola
+      - name: Install Zola
+        run: |
+          cargo install zola
+
+      # Step 4: Build the site
+      - name: Build site
+        run: |
+          zola build
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # If your repository is a user or organization site, use the following:
+          # publish_branch: main
+          # Otherwise, for project sites, the default 'gh-pages' branch is fine
+
