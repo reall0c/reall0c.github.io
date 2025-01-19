@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://reall0c.github.io/reall0c.github.io/sitemap.xml
