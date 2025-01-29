@@ -25,7 +25,10 @@ jobs:
       # Step 3: Install Zola
       - name: Install Zola
         run: |
-          cargo install zola
+          wget https://github.com/getzola/zola/releases/download/v0.19.0/zola-v0.19.0-x86_64-unknown-linux-gnu.tar.gz
+          tar -xzf zola-v0.19.0-x86_64-unknown-linux-gnu.tar.gz
+          sudo mv zola /usr/local/bin/
+          zola --version  # Verify installation
 
       # Step 4: Build the site
       - name: Build site
