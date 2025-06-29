@@ -1,0 +1,9 @@
+# Ignore generated site output
+public/
+
+# Zola cache
+.zola-cache/
+
+# Editor files
+*.swp
+.DS_Store
