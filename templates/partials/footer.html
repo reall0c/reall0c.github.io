@@ -32,8 +32,9 @@
   </div>
   <div class="flex basis-full lg:basis-1/2 lg:justify-end">
     <span class="mr-6 lg:ml-6">
-      <a class="link" href="https://www.getzola.org/" target="_blank">{{
-        macros::tr(key="footer_powered_by", lk=lang, td=g_trans_data) }}</a>
+      {{ macros::tr(key="footer_powered_by", lk=lang, td=g_trans_data) }} <a
+      class="link" href="https://www.getzola.org/" target="_blank">{{
+        macros::tr(key="footer_generator_name", lk=lang, td=g_trans_data) }}</a>
     </span>
     <a class="link" href="https://www.getzola.org/themes/linkita/" target="_blank">&#9998; {{
       macros::tr(key="footer_theme_name", lk=lang, td=g_trans_data) }}</a>

@@ -1,13 +1,19 @@
 # reAll0c.github.io
 
-This repository contains the source for **reAll0c's Cave Den**, a personal site focused on cybersecurity and AI topics.  The site is built with [Zola](https://www.getzola.org/) using the [Linkita](https://github.com/salif/linkita) theme vendored directly in the `themes/` directory.
+This repository contains the source for **reAll0c's Cave Den**, a personal site focused on cybersecurity and AI topics.  The site is built with [Zola](https://www.getzola.org/) using the [Linkita](https://codeberg.org/salif/linkita) theme as a submodule.
 
 ## Cloning
 
-Clone the repository normally:
+Clone the repository including the theme submodule:
 
 ```bash
-git clone https://github.com/reall0c/reall0c.github.io.git
+git clone --recursive https://github.com/reall0c/reall0c.github.io.git
+```
+
+If you already cloned without `--recursive`, initialise the submodule with:
+
+```bash
+git submodule update --init --recursive
 ```
 
 ## Building locally
