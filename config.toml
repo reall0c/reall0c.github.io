@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://reall0c.github.io/reall0c.github.io"
+base_url = "https://reall0c.github.io"
 title = "reAll0c's cave den"
 theme = "linkita"
 # Whether to automatically compile all Sass files in the sass directory
@@ -138,14 +138,14 @@ social = [
 [extra.footer]
 # Replace with the correct year.
 # (type: number; default value: current year;)
-since = 2025
+since = 2024
 
 # Replace with the url of the license you want.
 # (type: string; no default value; supports `$BASE_URL`;)
-license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+license_url = "$BASE_URL/LICENSE"
 
 # Replace `Your Name` with your name and `CC BY-SA 4.0` with the name of the license you want
-copyright = "&copy; $YEAR Your Name &vert; [CC BY-SA 4.0]($LICENSE_URL)"
+copyright = "&copy; $YEAR reAll0c &vert; [CC BY-SA 4.0]($LICENSE_URL)"
 
 # (type: string; no default value; supports `$BASE_URL`;)
 # privacy_policy_url = "$BASE_URL/privacy-policy/"
