@@ -1,6 +1,7 @@
 +++
 title = "About"
 description = "About this site"
+template = "pages.html"
 extra.profile = "reAll0c"
 +++
 

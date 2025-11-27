@@ -24,6 +24,11 @@ feed_filenames = ["atom.xml"] # or ["rss.xml"]
 #  for `default_language`. (type: boolean;)
 build_search_index = true
 
+# Configure taxonomies
+[taxonomies]
+tags = { name = "tags", paginate_by = 10, feed = true }
+categories = { name = "categories", paginate_by = 10, feed = true }
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -89,10 +94,10 @@ header_dark_color = "#27272a"
 
 [extra.menus]
 menu_name = [
-  {url = "$BASE_URL/pages/archive/", name = "Archive"},
-  {url = "$BASE_URL/categories", name = "Categories"},
+  {url = "$BASE_URL/archive/", name = "Archive"},
+  {url = "$BASE_URL/categories/", name = "Categories"},
   {url = "$BASE_URL/tags/", name = "Tags"},
-  {url = "$BASE_URL/pages/about/", name = "About"},
+  {url = "$BASE_URL/about/", name = "About"},
 ]
 
 # Replace `your_username` with your username.
