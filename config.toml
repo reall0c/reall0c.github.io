@@ -25,9 +25,10 @@ feed_filenames = ["atom.xml"] # or ["rss.xml"]
 build_search_index = true
 
 # Configure taxonomies
-[taxonomies]
-tags = { name = "tags", paginate_by = 10, feed = true }
-categories = { name = "categories", paginate_by = 10, feed = true }
+taxonomies = [
+  {name = "tags", paginate_by = 10, feed = true},
+  {name = "categories", paginate_by = 10, feed = true},
+]
 
 [markdown]
 # Whether to do syntax highlighting
